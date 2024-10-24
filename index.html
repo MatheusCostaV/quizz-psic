@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizz Psicologia</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Quizz de Psicologia</h1>
+    </header>
+
+    <!-- FORMULÁRIO DE NOME -->
+    <div id="name-container" class="form-container">
+      <form id="name-form">
+        <label for="player-name">Digite seu nome:</label>
+        <input type="text" id="player-name" placeholder="Seu nome aqui" required />
+        <button type="submit">Iniciar Quiz</button>
+      </form>
+    </div>
+
+    <main class="hide">
+      <!-- QUIZZ CONTAINER -->
+      <div id="quizz-container">
+        <p id="question">
+          <span id="question-number">1</span> &#8212;
+          <span id="question-text">blublu</span>
+        </p>
+        <div id="answers-box">
+          <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+        </div>
+      </div>
+
+      <!-- PONTUAÇÃO FINAL -->
+      <div id="score-container" class="hide">
+        <h2>Parabéns, <span id="player-display-name"></span>!</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>
+          Você acertou <span id="correct-answers">0</span> de
+          <span id="questions-qty">10</span> perguntas
+        </p>
+        <button id="restart">Refazer quizz!</button>
+
+        <!-- RANKING -->
+        <div id="ranking-container" class="ranking-container hide">
+          <h2>Ranking</h2>
+          <ol id="ranking-list" class="ranking-list"></ol>
+        </div>
+      </div>
+
+      <!-- TEMPLATE RESPOSTA -->
+      <button class="answer-template hide">
+        <span class="btn-letter"></span> <span class="question-answer"></span>
+      </button>
+    </main>
+
+    <footer>
+      <p>
+        <strong>Copyright</strong> &copy; 2024
+        <a href="https://www.linkedin.com/in/matheus-costa-90b5ba228/">
+          <strong>Giovanna Cavalcante</strong>
+        </a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

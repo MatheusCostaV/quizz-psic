@@ -1,0 +1,269 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #EEDBBF;
+  color: #EEDBBF;
+}
+
+a {
+  color: #EEDBBF;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: #AB3130;
+}
+
+/* Melhorando o foco */
+textarea:focus,
+input:focus,
+select:focus,
+button:focus,
+a:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #AB3130;
+  outline: none;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  position: relative;
+  height: 100vh;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 6rem;
+  padding: 2rem 0;
+  background-color: #121212;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
+}
+
+footer {
+  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* Estilização do formulário de nome */
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #AB3130;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #AB3130;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.form-container button:hover {
+  background-color: #121212;
+}
+
+/* SCORE CONTAINER */
+#quizz-container,
+#score-container {
+  color: #121212;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #EEDBBF;
+  box-shadow: 7px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#quizz-container:hover,
+#score-container:hover {
+  transform: scale(1.02);
+}
+
+#quizz-container,
+#score-container {
+  width: 31.25rem;
+  max-width: 90%;
+}
+
+#score-container p {
+  margin: 1.25rem 0;
+}
+
+#score-container #display-score {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#correct-answers {
+  font-weight: bold;
+  color: #2eb94c;
+}
+
+#questions-qty {
+  font-weight: bold;
+  color: #AB3130;
+}
+
+#restart {
+  background-color: #AB3130;
+  color: #fff;
+  font-weight: bold;
+  height: 3.125rem;
+  border: 1px solid #EEDBBF;
+  width: 11.25rem;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#restart:hover {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Quizz container */
+#question {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #121212;
+  font-weight: bold;
+}
+
+#answers-box button {
+  display: flex;
+  align-items: stretch;
+  margin: 1rem 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+}
+
+#answers-box button:hover {
+  background-color: #121212;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#answers-box .btn-letter {
+  font-size: 1.875rem;
+  font-weight: bold;
+  background-color: #121212;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  padding: 0.3125rem;
+  max-width: 2.8125rem;
+}
+
+.question-answer {
+  flex: 1 1 0;
+  display: flex;
+  padding: 0.625rem 0;
+  align-items: center;
+  margin-left: 0.625rem;
+  font-size: 1rem;
+}
+
+#quizz-container .wrong-answer,
+#quizz-container .correct-answer {
+  display: none;
+}
+
+/* Estilização do ranking */
+.ranking-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.ranking-container h2 {
+  margin-bottom: 1rem;
+  color: #121212;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ranking-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #EEDBBF;
+  color: #121212;
+}
+
+.ranking-list li:last-child {
+  border-bottom: none;
+}
