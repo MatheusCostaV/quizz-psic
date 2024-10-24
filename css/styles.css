@@ -88,6 +88,7 @@ footer {
   margin: 2rem auto;
   width: 90%;
   max-width: 400px;
+  height: fit-content;
 }
 
 .form-container label {
@@ -138,11 +139,13 @@ footer {
   transform: scale(1.02);
 }
 
-#quizz-container,
-#score-container {
-  width: 31.25rem;
-  max-width: 90%;
+#quizz-container{
+  max-width: 31.25rem;
 }
+
+#score-container{
+  width: 100%;
+} 
 
 #score-container p {
   margin: 1.25rem 0;
