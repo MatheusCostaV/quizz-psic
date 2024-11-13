@@ -16,96 +16,79 @@ let points = 0;
 let currentQuestionIndex = 0;
 let questions = [
   {
-    question: "O que é Psicologia?",
+    question: "Qual é o principal objetivo da psicologia escolar e educacional?",
     answers: [
-      { answer: "Estudo da mente e comportamento", correct: true },
-      { answer: "Estudo de números", correct: false },
-      { answer: "Estudo de animais", correct: false },
-      { answer: "Estudo de astros", correct: false }
+      { answer: "Diagnosticar transtornos de aprendizagem nos estudantes", correct: false },
+      { answer: "Promover a adaptação dos estudantes ao ambiente escolar e o desenvolvimento de práticas educacionais inclusivas", correct: true },
+      { answer: "Atender apenas aos casos de indisciplina nas escolas", correct: false },
+      { answer: "Avaliar exclusivamente a inteligência dos alunos por meio de testes", correct: false }
     ]
   },
   {
-    question: "Quem é considerado o pai da psicanálise?",
+    question: "Quais são as práticas comuns dos psicólogos escolares para promover a inclusão no ambiente escolar?",
     answers: [
-      { answer: "Sigmund Freud", correct: true },
-      { answer: "Carl Rogers", correct: false },
-      { answer: "Jean Piaget", correct: false },
-      { answer: "B.F. Skinner", correct: false }
+      { answer: "Realizar apenas avaliações individuais dos alunos", correct: false },
+      { answer: "Desenvolver programas de prevenção ao bullying e atividades que valorizem a diversidade", correct: true },
+      { answer: "Organizar atividades lúdicas esporadicamente", correct: false },
+      { answer: "Somente intervir em casos de distúrbios emocionais graves", correct: false }
     ]
   },
   {
-    question: "Qual é o foco principal da psicologia comportamental?",
+    question: "Qual a principal diferença entre a psicologia escolar e a psicologia educacional?",
     answers: [
-      { answer: "Pensamentos inconscientes", correct: false },
-      { answer: "Comportamentos observáveis", correct: true },
-      { answer: "Sonhos e memórias", correct: false },
-      { answer: "Experiências espirituais", correct: false }
+      { answer: "A psicologia escolar foca em diagnósticos clínicos, enquanto a psicologia educacional apenas realiza atividades recreativas", correct: false },
+      { answer: "A psicologia escolar atua diretamente nas escolas, enquanto a psicologia educacional foca na pesquisa e no desenvolvimento de métodos de ensino", correct: true },
+      { answer: "Não há diferença entre as duas áreas", correct: false },
+      { answer: "A psicologia educacional é aplicada apenas no ensino superior", correct: false }
     ]
   },
   {
-    question: "Quem desenvolveu a teoria do condicionamento clássico?",
+    question: "Qual dessas ações NÃO é uma responsabilidade do psicólogo escolar?",
     answers: [
-      { answer: "Sigmund Freud", correct: false },
-      { answer: "Ivan Pavlov", correct: true },
-      { answer: "Carl Jung", correct: false },
-      { answer: "Albert Bandura", correct: false }
+      { answer: "Orientação e intervenção com alunos com dificuldades de aprendizagem", correct: false },
+      { answer: "Desenvolvimento de políticas escolares inclusivas junto à equipe pedagógica", correct: false },
+      { answer: "Prescrição de medicamentos para alunos com distúrbios de comportamento", correct: true },
+      { answer: "Apoio aos professores para entender as necessidades emocionais dos alunos", correct: false }
     ]
   },
   {
-    question: "O que é 'cognição' na psicologia?",
+    question: "Qual é o principal foco da Psicologia do Esporte?",
     answers: [
-      { answer: "Processos mentais envolvidos no conhecimento", correct: true },
-      { answer: "Respostas emocionais", correct: false },
-      { answer: "Reações fisiológicas", correct: false },
-      { answer: "Movimentos físicos", correct: false }
+      { answer: "Analisar o desempenho físico dos atletas ao analisar transtornos e encaminhá-lo", correct: false },
+      { answer: "Avaliar o talento esportivo inato dos atletas", correct: false },
+      { answer: "Compreender como os fatores psicológicos afetam o desempenho físico e como a prática de esportes e exercícios afeta o desenvolvimento psicológico", correct: true },
+      { answer: "Desenvolver programas de treino físico em conjunto com a terapia individual para que o atleta tenha capacidade física e mental nos treinos", correct: false }
     ]
   },
   {
-    question: "Qual psicólogo é conhecido pela hierarquia das necessidades?",
+    question: "Qual é uma estratégia comum usada por psicólogos do esporte para ajudar atletas a lidarem com a ansiedade antes de uma competição?",
     answers: [
-      { answer: "Abraham Maslow", correct: true },
-      { answer: "B.F. Skinner", correct: false },
-      { answer: "Erik Erikson", correct: false },
-      { answer: "John Watson", correct: false }
+      { answer: "Incentivar o isolamento social", correct: false },
+      { answer: "Usar técnicas de visualização e respiração controlada", correct: true },
+      { answer: "Aplicar treinos físicos intensivos", correct: false },
+      { answer: "Focar exclusivamente no aspecto técnico da modalidade", correct: false }
     ]
   },
   {
-    question: "Qual a principal função dos neurotransmissores no cérebro?",
+    question: "Qual das alternativas a seguir é um papel comum do psicólogo do esporte com equipes?",
     answers: [
-      { answer: "Transmitir impulsos elétricos", correct: true },
-      { answer: "Gerar energia celular", correct: false },
-      { answer: "Regenerar células cerebrais", correct: false },
-      { answer: "Controlar o fluxo sanguíneo", correct: false }
+      { answer: "Determinar a estratégia de jogo", correct: false },
+      { answer: "Avaliar o preparo físico dos jogadores", correct: false },
+      { answer: "Facilitar a coesão do grupo e promover a comunicação efetiva entre os membros da equipe", correct: true },
+      { answer: "Gerenciar a logística das competições através da personalidade de cada membro", correct: false }
     ]
   },
   {
-    question: "O que é um transtorno de ansiedade?",
+    question: "Qual dos seguintes fatores NÃO é frequentemente trabalhado na Psicologia do Esporte?",
     answers: [
-      { answer: "Estado mental relacionado ao excesso de preocupações e medos", correct: true },
-      { answer: "Perda total de memória", correct: false },
-      { answer: "Dificuldade em processar emoções", correct: false },
-      { answer: "Falta de habilidade motora", correct: false }
-    ]
-  },
-  {
-    question: "Qual desses é um transtorno do humor?",
-    answers: [
-      { answer: "Transtorno Bipolar", correct: true },
-      { answer: "Esquizofrenia", correct: false },
-      { answer: "Transtorno obsessivo-compulsivo (TOC)", correct: false },
-      { answer: "Transtorno de Personalidade Borderline", correct: false }
-    ]
-  },
-  {
-    question: "Qual é o principal foco da terapia cognitivo-comportamental (TCC)?",
-    answers: [
-      { answer: "Modificar pensamentos e comportamentos disfuncionais", correct: true },
-      { answer: "Interpretar sonhos", correct: false },
-      { answer: "Investigar memórias reprimidas", correct: false },
-      { answer: "Estimular criatividade artística", correct: false }
+      { answer: "Controle de ansiedade e estresse", correct: false },
+      { answer: "Desenvolvimento de habilidades técnicas motoras", correct: true },
+      { answer: "Motivação e autoconfiança", correct: false },
+      { answer: "Reabilitação psicológica pós-lesão", correct: false }
     ]
   }
 ];
+
 let ranking = JSON.parse(localStorage.getItem('ranking')) || [];
 
 // Manipula o envio do formulário e inicia o quiz
@@ -145,13 +128,20 @@ function showQuestion() {
     button.innerHTML = `<span class="btn-letter">${String.fromCharCode(65 + index)}</span>
                         <span class="question-answer">${answer.answer}</span>`;
     button.classList.add('answer-btn');
-    button.addEventListener('click', () => checkAnswer(answer.correct));
+    button.addEventListener('click', () => checkAnswer(button, answer.correct)); // Passa o botão para alterar a cor
     answersBox.appendChild(button);
   });
 }
 
 // Verifica a resposta clicada
-function checkAnswer(isCorrect) {
+function checkAnswer(button, isCorrect) {
+  // Altera a cor do botão de resposta
+  if (isCorrect) {
+    button.style.backgroundColor = "#2eb94c"; // Verde para acerto
+  } else {
+    button.style.backgroundColor = "#AB3130"; // Vermelho para erro
+  }
+
   if (isCorrect) {
     points++; // Incrementa pontuação
   }
@@ -159,7 +149,7 @@ function checkAnswer(isCorrect) {
   // Vai para a próxima pergunta ou finaliza o quiz
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
-    showQuestion();
+    setTimeout(() => showQuestion(), 500); // Espera meio segundo antes de mostrar a próxima pergunta
   } else {
     showSuccessMessage(); // Mostra tela final com pontuação
   }
@@ -180,36 +170,14 @@ function showSuccessMessage() {
   correctAnswers.textContent = points;
   questionsQty.textContent = questions.length;
 
-  // Atualiza o ranking
-  updateRanking(playerName, points);
-
-  // Exibe o ranking
-  displayRanking();
-  document.querySelector('#ranking-container').classList.remove('hide'); // Mostrar ranking após exibir a pontuação
+  // Remover a exibição de ranking
+  document.querySelector('#ranking-container').classList.add('hide'); // Esconde o ranking
 }
 
 // Oculta o quiz e exibe a pontuação
 function hideOrShowQuizz() {
   quizzContainer.classList.toggle('hide');
   scoreContainer.classList.toggle('hide');
-}
-
-// Atualiza o ranking e salva no localStorage
-function updateRanking(name, points) {
-  ranking.push({ name, points });
-  ranking.sort((a, b) => b.points - a.points); // Ordena por pontuação
-  localStorage.setItem('ranking', JSON.stringify(ranking)); // Armazena no localStorage
-}
-
-// Exibe o ranking atualizado
-function displayRanking() {
-  rankingList.innerHTML = ''; // Limpa o ranking atual
-
-  ranking.forEach((player, index) => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `${index + 1}. ${player.name} - ${player.points} pontos`;
-    rankingList.appendChild(listItem);
-  });
 }
 
 // Reinicia o quiz quando o botão "Refazer quizz" é clicado

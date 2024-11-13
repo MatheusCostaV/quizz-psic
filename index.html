@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <header>
-      <h1>Quizz de Psicologia</h1>
+      <h1>Quiz de Psicologia</h1>
     </header>
 
     <!-- FORMULÁRIO DE NOME -->
@@ -28,7 +28,7 @@
     </div>
 
     <main class="hide">
-      <!-- QUIZZ CONTAINER -->
+      <!-- QUIZ CONTAINER -->
       <div id="quizz-container">
         <p id="question">
           <span id="question-number">1</span> &#8212;
@@ -42,15 +42,74 @@
         </div>
       </div>
 
+<!-- Resultados Detalhados -->
+<div id="detailed-results-container" class="hide">
+  <h2>Resultados Detalhados</h2>
+  <div id="detailed-results"></div>
+</div>
+      <!-- Adicione um elemento para mostrar a explicação após a resposta -->
+      <p id="explanation" class="hide"></p>
+
       <!-- PONTUAÇÃO FINAL -->
       <div id="score-container" class="hide">
         <h2>Parabéns, <span id="player-display-name"></span>!</h2>
         <p id="display-score"><span>90</span>%</p>
         <p>
           Você acertou <span id="correct-answers">0</span> de
-          <span id="questions-qty">10</span> perguntas
+          <span id="questions-qty">8</span> perguntas
         </p>
-        <button id="restart">Refazer quizz!</button>
+        <button id="restart">Refazer quiz!</button>
+
+        <div class="question-result">
+          <h2>Qual é o principal objetivo da psicologia escolar e educacional?</h2>
+          <h3>Resposta Correta: B) Promover a adaptação dos estudantes ao ambiente escolar e o desenvolvimento de práticas educacionais inclusivas.</h3>
+          <span>A psicologia escolar busca promover um ambiente inclusivo, facilitando a
+            adaptação e o bem-estar dos estudantes, além de trabalhar com métodos que favoreçam a
+            aprendizagem.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Quais são as práticas comuns dos psicólogos escolares para promover a inclusão no ambiente escolar?</h2>
+          <h3>Resposta Correta: B) Desenvolver programas de prevenção ao bullying e atividades que valorizem a diversidade.</h3>
+          <span>O psicólogo escolar desenvolve práticas para promover a inclusão e reduzir barreiras para que todos os alunos se sintam seguros e respeitados na escola.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual a principal diferença entre a psicologia escolar e a psicologia educacional?</h2>
+          <h3>Resposta Correta: B) A psicologia escolar atua diretamente nas escolas, enquanto a psicologia educacional foca na pesquisa e no desenvolvimento de métodos de ensino.</h3>
+          <span>A psicologia escolar está mais voltada para a prática direta nas instituições, enquanto a psicologia educacional se concentra na pesquisa e desenvolvimento de teorias aplicadas à educação.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual dessas ações NÃO é uma responsabilidade do psicólogo escolar?</h2>
+          <h3>Resposta Correta: C) Prescrição de medicamentos para alunos com distúrbios de comportamento.</h3>
+          <span>Psicólogos escolares não têm permissão para prescrever medicamentos; essa função é reservada para médicos, como psiquiatras.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual é o principal foco da Psicologia do Esporte?</h2>
+          <h3>Resposta Correta: C) Compreender como os fatores psicológicos afetam o desempenho físico e como a prática de esportes e exercícios afeta o desenvolvimento psicológico.</h3>
+          <span>A Psicologia do Esporte foca nos fatores emocionais, cognitivos e motivacionais que impactam o desempenho e o bem-estar dos atletas.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual é uma estratégia comum usada por psicólogos do esporte para ajudar atletas a lidarem com a ansiedade antes de uma competição?</h2>
+          <h3>Resposta Correta: B) Usar técnicas de visualização e respiração controlada.</h3>
+          <span>Técnicas como visualização e respiração controlada são ferramentas que ajudam os atletas a reduzir a ansiedade e a melhorar a concentração antes de competições.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual das alternativas a seguir é um papel comum do psicólogo do esporte com equipes?</h2>
+          <h3>Resposta Correta: C) Facilitar a coesão do grupo e promover a comunicação efetiva entre os membros da equipe.</h3>
+          <span>Psicólogos do esporte promovem a coesão e comunicação dentro de uma equipe, o que é essencial para o bom funcionamento e para o alcance dos objetivos do grupo.</span>
+        </div>
+
+        <div class="question-result">
+          <h2>Qual dos seguintes fatores NÃO é frequentemente trabalhado na Psicologia do Esporte?</h2>
+          <h3>Resposta Correta: B) Desenvolvimento de habilidades técnicas motoras.</h3>
+          <span>O desenvolvimento de habilidades motoras é mais frequentemente abordado por treinadores e preparadores físicos, enquanto o psicólogo do esporte trabalha aspectos mentais e emocionais para melhorar o desempenho e bem-estar dos atletas.</span>
+        </div>
+
 
         <!-- RANKING -->
         <div id="ranking-container" class="ranking-container hide">
@@ -67,9 +126,9 @@
 
     <footer>
       <p>
-        <strong>Copyright</strong> &copy; 2024
+        <strong>Desenvolvido por</strong>  
         <a href="https://www.linkedin.com/in/matheus-costa-90b5ba228/" target="_blank">
-          <strong>Giovanna Cavalcante</strong>
+          <strong>Matheus Costa</strong>
         </a>
       </p>
     </footer>
