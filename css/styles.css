@@ -139,18 +139,18 @@ footer {
   transform: scale(1.02);
 }
 
-#quizz-container{
+#quizz-container {
   max-width: 31.25rem;
 }
 
-#score-container{
+#score-container {
   width: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} 
+}
 
 #score-container p {
   margin: 1.25rem 0;
@@ -181,10 +181,11 @@ footer {
   border-radius: 5px;
   border-color: #000000;
   border-style: solid;
-    & h2{
-      font-size: 1.5rem;
-      border-bottom: #000000 solid;
-    }
+}
+
+.question-result h2 {
+  font-size: 1.5rem;
+  border-bottom: #000000 solid;
 }
 
 #restart {
@@ -290,4 +291,37 @@ footer {
 
 .ranking-list li:last-child {
   border-bottom: none;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  #score-container,
+  .form-container,
+  .ranking-container,
+  .question-result {
+    max-width: 90%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #display-score {
+    font-size: 1.5rem;
+  }
+
+  #question {
+    font-size: 1rem;
+  }
+
+  .question-result h2 {
+    font-size: 1.25rem;
+  }
+
+  #restart {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .question-answer {
+    font-size: 0.9rem;
+  }
 }
